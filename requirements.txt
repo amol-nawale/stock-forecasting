@@ -1,4 +1,4 @@
-TextBlob
+
 matplotlib
 pandas
 numpy
@@ -6,7 +6,7 @@ seaborn
 datetime
 streamlit >= 1.9.2 
 yfinance
-sklearn
+scikit-learn
 tensorflow
 keras
 
