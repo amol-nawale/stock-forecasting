@@ -38,7 +38,7 @@ if button:
     data=data_hist['Close']
     scaler=MinMaxScaler(feature_range=(0,1))
     df1=scaler.fit_transform(np.array(data).reshape(-1,1))
-    for i in range(5):     
+    for i in range(8):     
         train_data=df1
         time_step=100
         x_train,y_train=sequence(train_data,time_step)
@@ -136,7 +136,7 @@ if button:
     lst_output=scaler.inverse_transform(lst_output)
     future=pd.DataFrame(lst_output)
     future.columns=['future']
-    future
+    
 
 
 
@@ -144,6 +144,7 @@ if button:
     fig, ax = plt.subplots()
     ax.plot(future)
     st.pyplot(fig)
+    future
 
 
 
