@@ -143,7 +143,7 @@ if button:
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
     ax.plot(future)
-    ax.title("Next 15 Days Forecast")
+    ax.set_title("Next 15 Days Forecast")
     st.pyplot(fig)
     future
     st.write(model_error_dict)
